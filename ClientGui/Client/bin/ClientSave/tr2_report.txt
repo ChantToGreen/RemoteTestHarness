@@ -1,0 +1,36 @@
+
+  loaded TestRequest "tr2"
+  tr2, Jim Fawcett, 11/27/2018 12:01:32 AM, TestDriver1.dll
+
+  loading from "C:\PR4 OOD\PR4 OOD RemoteTestHarness1.1\testLibraries"
+    TestDriver1.dll
+
+
+  Testing CodeUtilities Package
+ ===============================
+  Test:   CodeUtilities single Test DLL
+  Author: Ammar Salman, modified by Jim Fawcett
+  Tue Nov 27 00:01:32 2018
+
+  Testing ProcessCmdLine class
+ ------------------------------
+  Arguments:
+    arg #0:	dummy.exe
+    arg #1:	../
+    arg #2:	/s
+    arg #3:	"*.h"
+    arg #4:	"*.cpp"
+
+  Extracted information:
+    Path:	../
+    Options:	s 
+    Patterns:	"*.h" "*.cpp" 
+
+  Testing Converter class
+ -------------------------
+  Converting from string "10" to integer
+  Converted integer is 10
+  Converting from integer 10 to string
+  Converted string: "10"
+  
+  passed

@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  this.cpp
+c:\pr3ood\process\this\this.cpp(9): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  this.vcxproj -> C:\PR3OOD\Process\Debug\this.exe

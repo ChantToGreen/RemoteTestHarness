@@ -1,0 +1,7 @@
+Build instruction:
+1. Set port number for client (less than 8083) and host (8083) in commandline argument
+2. Build CodeUtilities, CommLibWrapper, DateTime, DllLoader, FileSystem,  FileUtilities,
+   Message, MsgPassingComm, SingletonLogger, Socket, StringUtilities, TestHarnessCore,
+   TestRequest as static library
+3. Build Translater, Project4DemoLib as dynamic library
+4. Build rest as console applications

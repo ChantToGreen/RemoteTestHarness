@@ -1,0 +1,85 @@
+
+  loaded TestRequest "4543534"
+  4543534, Yilin Cui, 2018/12/13 23:26:55, Project4DemoLib.dll
+
+  loading from "C:\Users\Yilin Cui\Desktop\PR4 OOD RemoteTestHarness1.1 (2)\PR4 OOD RemoteTestHarness1.1\testLibraries"
+    Project4DemoLib.dll
+
+
+Demonstrating Project4 requirement #1: using VS2017 and console project
+-----------------------------------------------------------------------
+This is VS2017 and console project, trust me
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #2: using WPF for GUI
+--------------------------------------------------------------------------------
+Client is created by WPF
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #3: Assemble the work of previous project and Client need not to wait for reply
+--------------------------------------------------------------------------------
+Showing the file about previous project
+
+--------------------------------------------------------------------------------
+Client has adopted ashyncronous message passing comm, user can keep work on the client and let the reply popup automatically 
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #4: GUI shall support selecting Libs and display result 
+--------------------------------------------------------------------------------
+Show the code where GUI supports selecting LibsShow the code where GUI supports view result=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #5: provide message designs appropriate for this application
+--------------------------------------------------------------------------------
+Showing the code in Client and Host how the message attribute is used
+Command varies in different messages,
+client and server will act differently based on the message command received
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #6: support sending TestRequest messages from Client to TestHarness Server
+--------------------------------------------------------------------------------
+Showing the code where Client send TestRequest,
+you can create your cutomized test request on Client window
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #7: Child test process shall execute each test request as sequence of tests
+--------------------------------------------------------------------------------
+Showing the code where child process run tests
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #8: Child process shall send result back to the client
+--------------------------------------------------------------------------------
+Showing the code where child process send back result
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #8: Shall have multiple client and child tester running concurrently
+--------------------------------------------------------------------------------
+As you can see the child tester and client is running on your screen
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #10: Shall have an automated unit test suite
+--------------------------------------------------------------------------------
+This is the automated unit test suite
+=======================================================================
+
+  passed
+----------------
+ All tests passed
+----------------------

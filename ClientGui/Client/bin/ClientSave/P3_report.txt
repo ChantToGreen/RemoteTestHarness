@@ -1,0 +1,68 @@
+
+  loaded TestRequest "P3"
+  P3, Yilin Cui, 2018/12/13 22:49:46, Project3DemoLibrary.dll
+
+  loading from "C:\Users\Yilin Cui\Desktop\PR4 OOD RemoteTestHarness1.1 (2)\PR4 OOD RemoteTestHarness1.1\testLibraries"
+    Project3DemoLibrary.dll
+
+
+Demonstrating Project3 requirement #1: using VS2017 and console project
+-----------------------------------------------------------------------
+This is VS2017 and console project, trust me
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #2: using standard I/O stream, new and delete
+--------------------------------------------------------------------------------
+Showing the code where uses standard I/O stream
+Line::112 is where standard I/O stream is usedShowing the code where uses shared pointer
+Line::118 is where shared pointer is used
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #3: provide and use ProcessPoll for TestHarness
+--------------------------------------------------------------------------------
+Showing the code fragment where Host spawn and respawn child test process
+To make the test message easy to read, I only use one child process for demonstration
+The second child process runs Ammar's dll
+If you close the child process while the Host hasn't received the order to shut down
+A new child process will be respawned
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #4: provide TestHarness and ChildTester
+--------------------------------------------------------------------------------
+Showing whereabout the header files Tester and ChildProcess
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #5: ChildTester shall use logging facility
+--------------------------------------------------------------------------------
+Showing the code were ChildTester uses log and send back log to Client
+Line 96, 97 and 108 are where ChildTester uses log and line 107 is where log is sent back
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #6: Shall have client to send request message
+--------------------------------------------------------------------------------
+Showing the code were ChildTester uses log and send back log to Client
+Test log of this request can be found in clientSave directory after the test
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #7: Shall have automated unit test suite
+--------------------------------------------------------------------------------
+All above are automated unit test suite, as you can see, it is running on one of the child process in test harness
+Another child process runs Ammar's dll
+=======================================================================
+
+  passed
+----------------
+ All tests passed
+----------------------

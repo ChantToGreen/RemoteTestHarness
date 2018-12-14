@@ -1,0 +1,129 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        Title="MainWindow" Height="700" Width="800">
+    <Grid>
+        <TabControl FontFamily="tahoma" FontWeight="Bold" FontSize="16">
+            <TabItem Header="Setting and Admin" Padding="5,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="200"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label VerticalAlignment="Center" Margin="20">Author:</Label>
+                            <TextBox Name="AuthorName" Height="25" Width="200" Margin="70,0,0,0" >Yilin Cui</TextBox>
+                            <Button x:Name="ComfirmAuthor"  Width="80" Height="25" Margin="30"  Click="ComfirmAuthor_Click">Confirm</Button>
+                            <Button x:Name="DefaultAuthor"  Width="80" Height="25" Margin="30"  Click="DefaultAuthor_Click">Default</Button>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <StackPanel Orientation="Vertical">
+                            <Label>Status:</Label>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Margin="20">Client Address:</Label>
+                                <TextBlock x:Name="ClientArress" VerticalAlignment="Center">
+                                    </TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Margin="20">Server Address:</Label>
+                                <TextBlock x:Name="ServerArress" VerticalAlignment="Center"></TextBlock>
+                                <TextBlock x:Name="ServerStat"  Margin="10" VerticalAlignment="Center" >(Running)</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Button x:Name="KillServer" Width="120" Height="25" Click="KillServer_Click"> Stop Server </Button>
+
+                    </Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Create Request" Padding="5,10">
+                <DockPanel>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="350"></RowDefinition>
+                            <RowDefinition Height="5"></RowDefinition>
+                            <RowDefinition Height="180"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Orientation="Vertical" DockPanel.Dock="Top">
+                                <Label>Directories:</Label>
+                                <ListBox ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                    x:Name="Dir" Height="250" Margin="10" MouseDoubleClick="Directory_MouseDoubleClick"></ListBox>
+                                <Button Name="SelectDir" Width="60" Margin="10" Click="SelectDir_Click">Open</Button>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <Label>Libraries:</Label>
+                                <ListBox ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                    x:Name="Libs" Height="250" Margin="10" MouseDoubleClick="Libs_MouseDoubleClick"></ListBox>
+                                <Button Name="SelectFile" Width="60" Margin="10" Click="SelectFile_Click">Select</Button>
+                            </StackPanel>
+                        </Grid>
+                        <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="#999"></GridSplitter>
+                        <Grid Grid.Row="2">
+                            <StackPanel>
+                                <Label >Selected Libs:</Label>
+                                <ListBox ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                    x:Name="Req" Height="130" Width="700" Margin="10" MouseDoubleClick="Req_MouseDoubleClick" ></ListBox>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock VerticalAlignment="Center" Margin="10">Name the request</TextBlock>
+                                <TextBox Name="ReqName"  Height="25" Width="200" Margin="20" ></TextBox>
+                                <Button Name="sendReq" Height="40" Margin="10" Width="150" Click="sendReq_Click">Send Request</Button>
+                                <Button Name="removeLib" Height="40" Margin="10" Width="150" Click="removeLib_Click">Remove Library</Button>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Request History">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0">
+                        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    x:Name="requestHistory"  Margin="10" Height="500" MouseDoubleClick="requestHistory_MouseDoubleClick" ></ListBox>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Name="ViewReq" Width="80" Margin="30" Click="ViewReq_Click">Open</Button>
+                            <Button Name="Resend" Width="80" Margin="30" Click="Resend_Click">Resend</Button>
+                            <Button Name="DeleteReq" Width="80" Margin="30" Click="Delete_Click">Delete</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="History Report">
+                <Grid>
+                    <StackPanel>
+                        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    x:Name="TestHistory"  Margin="10" Height="500" MouseDoubleClick="TestHistory_MouseDoubleClick"></ListBox>
+
+                        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                            <Button Name="ViewText" Width="80" Margin="30" Click="ViewText_Click">View</Button>
+                            <Button Name="DeleteRes" Width="80" Margin="30" Click="DeleteRes_Click">Delete</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

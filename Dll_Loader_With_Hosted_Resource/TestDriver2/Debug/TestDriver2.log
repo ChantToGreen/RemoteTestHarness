@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (TestDriver2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DemoReq.cpp
+     Creating library C:\PR3OOD\Debug\DemoReq.lib and object C:\PR3OOD\Debug\DemoReq.exp
+  TestDriver2.vcxproj -> C:\PR3OOD\Debug\DemoReq.dll

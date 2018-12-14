@@ -1,0 +1,174 @@
+
+  loaded TestRequest "tin1"
+  tin1, Yilin Cui, 2018/12/13 22:49:15, Project3DemoLibrary.dll, Project4DemoLib.dll, TestDriver1.dll
+
+  loading from "C:\Users\Yilin Cui\Desktop\PR4 OOD RemoteTestHarness1.1 (2)\PR4 OOD RemoteTestHarness1.1\testLibraries"
+    Project3DemoLibrary.dll
+    Project4DemoLib.dll
+    TestDriver1.dll
+
+
+  Testing CodeUtilities Package
+ ===============================
+  Test:   CodeUtilities single Test DLL
+  Author: Ammar Salman, modified by Jim Fawcett
+  Thu Dec 13 22:49:15 2018
+
+  Testing ProcessCmdLine class
+ ------------------------------
+  Arguments:
+    arg #0:	dummy.exe
+    arg #1:	../
+    arg #2:	/s
+    arg #3:	"*.h"
+    arg #4:	"*.cpp"
+
+  Extracted information:
+    Path:	../
+    Options:	s 
+    Patterns:	"*.h" "*.cpp" 
+
+  Testing Converter class
+ -------------------------
+  Converting from string "10" to integer
+  Converted integer is 10
+  Converting from integer 10 to string
+  Converted string: "10"
+  
+  passed
+
+Demonstrating Project4 requirement #1: using VS2017 and console project
+-----------------------------------------------------------------------
+This is VS2017 and console project, trust me
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #2: using WPF for GUI
+--------------------------------------------------------------------------------
+Client is created by WPF
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #3: Assemble the work of previous project and Client need not to wait for reply
+--------------------------------------------------------------------------------
+Showing the file about previous project
+
+--------------------------------------------------------------------------------
+Client has adopted ashyncronous message passing comm, user can keep work on the client and let the reply popup automatically 
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #4: GUI shall support selecting Libs and display result 
+--------------------------------------------------------------------------------
+Show the code where GUI supports selecting LibsShow the code where GUI supports view result=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #5: provide message designs appropriate for this application
+--------------------------------------------------------------------------------
+Showing the code in Client and Host how the message attribute is used
+Command varies in different messages,
+client and server will act differently based on the message command received
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #6: support sending TestRequest messages from Client to TestHarness Server
+--------------------------------------------------------------------------------
+Showing the code where Client send TestRequest,
+you can create your cutomized test request on Client window
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #7: Child test process shall execute each test request as sequence of tests
+--------------------------------------------------------------------------------
+Showing the code where child process run tests
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #8: Child process shall send result back to the client
+--------------------------------------------------------------------------------
+Showing the code where child process send back result
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #8: Shall have multiple client and child tester running concurrently
+--------------------------------------------------------------------------------
+As you can see the child tester and client is running on your screen
+=======================================================================
+
+  passed
+
+Demonstrating Project4 requirement #10: Shall have an automated unit test suite
+--------------------------------------------------------------------------------
+This is the automated unit test suite
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #1: using VS2017 and console project
+-----------------------------------------------------------------------
+This is VS2017 and console project, trust me
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #2: using standard I/O stream, new and delete
+--------------------------------------------------------------------------------
+Showing the code where uses standard I/O stream
+Line::112 is where standard I/O stream is usedShowing the code where uses shared pointer
+Line::118 is where shared pointer is used
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #3: provide and use ProcessPoll for TestHarness
+--------------------------------------------------------------------------------
+Showing the code fragment where Host spawn and respawn child test process
+To make the test message easy to read, I only use one child process for demonstration
+The second child process runs Ammar's dll
+If you close the child process while the Host hasn't received the order to shut down
+A new child process will be respawned
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #4: provide TestHarness and ChildTester
+--------------------------------------------------------------------------------
+Showing whereabout the header files Tester and ChildProcess
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #5: ChildTester shall use logging facility
+--------------------------------------------------------------------------------
+Showing the code were ChildTester uses log and send back log to Client
+Line 96, 97 and 108 are where ChildTester uses log and line 107 is where log is sent back
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #6: Shall have client to send request message
+--------------------------------------------------------------------------------
+Showing the code were ChildTester uses log and send back log to Client
+Test log of this request can be found in clientSave directory after the test
+=======================================================================
+
+  passed
+
+Demonstrating Project3 requirement #7: Shall have automated unit test suite
+--------------------------------------------------------------------------------
+All above are automated unit test suite, as you can see, it is running on one of the child process in test harness
+Another child process runs Ammar's dll
+=======================================================================
+
+  passed
+----------------
+ All tests passed
+----------------------

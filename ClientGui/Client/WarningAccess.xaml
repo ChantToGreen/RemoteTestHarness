@@ -1,0 +1,15 @@
+﻿<Window x:Class="Client.WarningAccess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="WarningAccess" Height="170" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" FontSize="20" >Directory access denied!</TextBlock>
+            <Button Name="CloseButton" Height="30" Width="80" Click="CloseButton_Click">Close</Button>
+        </StackPanel>
+        </Grid>
+</Window>

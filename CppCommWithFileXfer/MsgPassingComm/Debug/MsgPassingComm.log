@@ -1,0 +1,9 @@
+﻿  Logger.cpp
+  Comm.cpp
+c:\users\yilin cui\desktop\pr4 ood remotetestharness1.1 (2)\pr4 ood remotetestharness1.1\cppcommwithfilexfer\msgpassingcomm\comm.cpp(159): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+c:\users\yilin cui\desktop\pr4 ood remotetestharness1.1 (2)\pr4 ood remotetestharness1.1\cppcommwithfilexfer\msgpassingcomm\comm.cpp(202): warning C4244: 'argument': conversion from 'std::streamsize' to 'size_t', possible loss of data
+c:\users\yilin cui\desktop\pr4 ood remotetestharness1.1 (2)\pr4 ood remotetestharness1.1\cppcommwithfilexfer\msgpassingcomm\comm.cpp(205): warning C4244: 'argument': conversion from 'std::streamsize' to 'size_t', possible loss of data
+c:\users\yilin cui\desktop\pr4 ood remotetestharness1.1 (2)\pr4 ood remotetestharness1.1\cppcommwithfilexfer\msgpassingcomm\comm.cpp(263): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+c:\users\yilin cui\desktop\pr4 ood remotetestharness1.1 (2)\pr4 ood remotetestharness1.1\cppcommwithfilexfer\msgpassingcomm\comm.cpp(311): warning C4244: 'argument': conversion from 'std::streamsize' to 'size_t', possible loss of data
+  Generating Code...
+  MsgPassingComm.vcxproj -> C:\Users\Yilin Cui\Desktop\PR4 OOD RemoteTestHarness1.1 (2)\PR4 OOD RemoteTestHarness1.1\Debug\MsgPassingComm.lib
