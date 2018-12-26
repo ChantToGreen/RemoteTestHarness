@@ -1,7 +1,8 @@
 /////////////////////////////////////////////////////////////////////
 // Tester.cpp - Prototype for Test Harness child Tester            //
 // ver 1.0                                                         //
-// Jim Fawcett, CSE687 - Object Oriented Design, Fall 2018         //
+// Author: Yilin Cui, ycui21@syr.edu                               //
+// Origin: Dr. Jim Fawcett's website                               //
 /////////////////////////////////////////////////////////////////////
 
 #include "Tester.h"
